@@ -1,4 +1,4 @@
-# FSE, made easy
+# FSE, made easy [![Build Status](https://travis-ci.org/dbkaplun/fse-made-easy.svg?branch=master)](https://travis-ci.org/dbkaplun/fse-made-easy)
 Finite State Entropy (FSE) is an entropy coder which combines the speed of Huffman coding
 (which is suboptimal) with the compression ratio of arithmetic coding (which is slow). It is used
 in an optimized form within powerful compression schemes such as zstd and LZFSE.
