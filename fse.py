@@ -52,7 +52,7 @@ class Statistics(OrderedDict):
             self.total += prob
 
     def get_by_cdf(self, cdf):
-        """Return the last symbol stat whose CDF is less than or equal to the given CDF."""
+        """Return the first symbol stat whose CDF is greater than the given CDF."""
         values = list(self.values())
         idx = bisect_right([obj['cdf'] for obj in values], cdf)
         if not idx:
@@ -77,7 +77,7 @@ if __name__ == '__main__':
     TESTS = [
         "Hello, world!",
 
-        "Huffman coding is limited to 1 bit per symbol. FSE can a symbol as a fraction of a bit.",
+        "Huffman coding is limited to 1 bit per symbol. FSE encodes symbols as fractions of bits.",
 
         ' '.join("""
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt
